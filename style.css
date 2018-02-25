@@ -1,0 +1,32 @@
+body {
+  background: url("https://s3-us-west-2.amazonaws.com/fortyninemaps/media/frozen-meander-1440.jpg");
+  color: rgba(10, 30, 70, 0.95);
+}
+
+div.banner {
+  margin: 26% auto;
+  text-align: center;
+  text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.4);
+}
+
+div.fn-logo {
+  font-size: 5em;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 400;
+  line-height: 0.1;
+}
+
+.fn-logo .number {
+  font-family: 'Lato';
+  font-weight: 200;
+}
+
+div.subtitle {
+  font-size: 1.8em;
+  font-family: 'Lato';
+  font-weight: 200;
+  letter-spacing: .5em;
+  line-height: 0.2;
+}
+
+
