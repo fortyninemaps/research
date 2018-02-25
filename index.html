@@ -4,20 +4,56 @@
     <meta charset="utf-8" />
     <link rel="icon" type="image/png" href="/favicon-32x32.png" sizes="32x32" />
     <link rel="icon" type="image/png" href="/favicon-16x16.png" sizes="16x16" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
     <link rel="stylesheet" href="style.css" />
     <title>49MAPS: Research</title>
   </head>
   <body>
-    <div class="banner">
-      <div class="fn-logo">
-        <h1><span class="number">49</span>MAPS</h1>
+
+    <div class="container">
+
+      <div class="menu menu-closed" id="side-menu">
+        <div class="menu-items">
+          <a href="http://irlib.49fold.com">Ice-penetrating radar</a><br>
+          <a href="https://itm5live.herokuapp.com/">ITM5LIVE</a><br>
+          <a href="https://karta.fortyninemaps.com">Geospatial Python</a><br>
+          <a href="">Papers</a><br>
+        </div>
+        <div class="address">
+          3-1836 Napier St<br>
+          Vancouver, BC V5L2 2N3<br>
+          Canada<br>
+          natw {snail} fortyninemaps.com
+        </div>
       </div>
-      <div class="subtitle">
-        <h2>RESEARCH</h2>
+
+      <div class="content-pane">
+        <div class="hamburger" id="menu-toggle">
+          <i class="material-icons md-48">menu</i>
+        </div>
+        <div class="content">
+          <div class="banner">
+            <div class="fn-logo">
+              <h1><span class="number">49</span>MAPS</h1>
+            </div>
+            <div class="subtitle">
+              <h2>RESEARCH</h2>
+            </div>
+          </div>
+        </div>
       </div>
+
     </div>
 
     <script>
+
+      const menuButton = document.getElementById("menu-toggle");
+      menuButton.onclick = (ev) => {
+        const menu = document.getElementById("side-menu");
+        menu.classList.toggle("menu-open");
+        menu.classList.toggle("menu-closed");
+      };
+
       // Lazy load fonts after content
       function loadFont(url) {
         var xhr = new XMLHttpRequest();
