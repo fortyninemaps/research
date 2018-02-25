@@ -35,6 +35,7 @@ body {
 .menu>.address {
   line-height: 1.5;
   text-align: center;
+  font-size: small;
 }
 
 .menu-closed {
@@ -43,7 +44,7 @@ body {
 }
 
 .menu-open {
-  width: 20em;
+  width: 35em;
   padding: 9px;
 }
 
@@ -99,6 +100,18 @@ div.subtitle {
   font-weight: 200;
   letter-spacing: .5em;
   line-height: 0.2;
+}
+
+@media screen and (max-width: 800px) {
+
+  div.fn-logo {
+    font-size: 2em;
+  }
+
+  div.subtitle {
+    font-size: 0.8em;
+  }
+
 }
 
 .material-icons {
